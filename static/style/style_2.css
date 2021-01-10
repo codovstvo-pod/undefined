@@ -1,0 +1,1673 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    outline: none;
+    border: none;
+}
+
+.wrapper {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+    ". .";
+    margin-top: 5%;
+}
+
+.block-one {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-left: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 70%;
+}
+
+.text-one {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33.4623px;
+    line-height: 41px;
+    color: #000000;
+}
+
+.text-two {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33.4623px;
+    line-height: 41px;
+    color: #6EB1FF;
+}
+
+.title-two {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14.9345px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.click {
+    width: 330px;
+    height: 69px;
+    background: #6EB1FF;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.block-two {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 5%;
+}
+
+.info {
+    /* width: 100px;
+    height: 100px; */
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.17);
+    border-radius: 33px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.animations {
+    bottom: 10%;
+    position: absolute;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14.9345px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    transition: all .4s ease;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.animations.active {
+    transform: translateY(-400px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+
+.clicks {
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+}
+
+.value {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+.mbit {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.8196px;
+    line-height: 16px;
+    color: #C2C2C2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 4%;
+}
+
+.money {
+    width: 48%;
+    height: 66px;
+    background: #6EB1FF;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.17);
+    border-radius: 33px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#number-money {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding-right: 5px;
+}
+
+.speed {
+    width: 48%;
+    height: 66px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.17);
+    border-radius: 33px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4%;
+}
+
+#number-speed {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #6EB1FF;
+    padding-right: 5px;
+}
+
+.value-speed {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #6EB1FF;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+#advence {
+    position: relative;
+    width: 60%;
+    height: 66px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.17);
+    border-radius: 33px;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.advence-text-1{
+    position: absolute;
+    left: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.4803px;
+    line-height: 14px;
+    color: #C2C2C2;
+}
+
+.advence-text-2{
+    position: absolute;
+    left: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.4803px;
+    line-height: 14px;
+    color: #C2C2C2;
+}
+
+.advence-text-3{
+    position: absolute;
+    left: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.4803px;
+    line-height: 14px;
+    color: #C2C2C2;
+}
+
+.advence-text-4{
+    position: absolute;
+    left: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.4803px;
+    line-height: 14px;
+    color: #C2C2C2;
+}
+
+.advence-text-5{
+    position: absolute;
+    left: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.4803px;
+    line-height: 14px;
+    color: #C2C2C2;
+}
+
+.advence-text-6{
+    position: absolute;
+    left: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.4803px;
+    line-height: 14px;
+    color: #C2C2C2;
+}
+
+.advence-text-1.active {
+    color: #000;
+}
+.advence-text-2.active {
+    color: #000;
+}
+.advence-text-3.active {
+    color: #000;
+}
+.advence-text-4.active {
+    color: #000;
+}
+.advence-text-5.active {
+    color: #000;
+}
+.advence-text-6.active {
+    color: #000;
+}
+
+.cost {
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.number_1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6EB1FF;
+    margin-right: 4px;
+}
+
+.number_2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6EB1FF;
+    margin-right: 4px;
+}
+
+.number_3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6EB1FF;
+    margin-right: 4px;
+}
+
+.number_4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6EB1FF;
+    margin-right: 4px;
+}
+
+.number_5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6EB1FF;
+    margin-right: 4px;
+}
+
+.number_6 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6EB1FF;
+    margin-right: 4px;
+}
+
+.button-div {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.sait {
+    width: 330px;
+    height: 69px;
+    background: #6EB1FF;
+    border-radius: 13px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.sait:hover {
+    background: #000;
+    transition: 0.5s;
+}
+
+
+@media all and (max-width: 1500px) {
+    .logo {
+        width: 70%;
+    }
+
+    .text-one {
+        font-size: 30px;
+    }
+
+    .text-two {
+        font-size: 30px;
+    }
+
+    .click {
+        height: 59px;
+    }
+
+    .money {
+        height: 56px;
+    }
+
+    .speed {
+        height: 56px;
+    }
+
+    #advence {
+        height: 56px;
+    }
+
+    .sait {
+        height: 59px;
+    }
+}
+
+@media all and (max-width: 1342px){
+    .text-one {
+        font-size: 28px;
+    }
+
+    .text-two {
+        font-size: 28px;
+    }
+}
+
+@media all and (max-width: 1252px){
+    .text-one {
+        font-size: 27px;
+    }
+
+    .text-two {
+        font-size: 27px;
+    }
+}
+
+@media all and (max-width: 1204px){
+
+    .logo {
+        width: 60%;
+    }
+
+    .text-one {
+        font-size: 26px;
+    }
+
+    .text-two {
+        font-size: 26px;
+    }
+
+    .title-two {
+        font-size: 12px;
+    }
+
+    .click {
+        width: 270px;
+        height: 54px;
+        font-size: 15px;
+    }
+
+    .money {
+        height: 46px;
+    }
+
+    .speed {
+        height: 46px;
+    }
+
+    .number_1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        color: #6EB1FF;
+        margin-right: 4px;
+    }
+    
+    .number_2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        color: #6EB1FF;
+        margin-right: 4px;
+    }
+    
+    .number_3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        color: #6EB1FF;
+        margin-right: 4px;
+    }
+    
+    .number_4 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        color: #6EB1FF;
+        margin-right: 4px;
+    }
+    
+    .number_5 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        color: #6EB1FF;
+        margin-right: 4px;
+    }
+    
+    .number_6 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        color: #6EB1FF;
+        margin-right: 4px;
+    }
+
+    #number-money {
+        font-size: 14px;
+    }
+
+    #number-speed {
+        font-size: 14px;
+    }
+
+    .value-speed {
+        font-size: 14px;
+    }
+
+    .dollar {
+        width: 12%;
+    }
+
+    #advence {
+        height: 46px;
+    }
+
+    .advence-text-1 {
+        font-size: 10px;
+        left: 20px;
+    }
+
+    .advence-text-2 {
+        font-size: 10px;
+        left: 20px;
+    }
+
+    .advence-text-3 {
+        font-size: 10px;
+        left: 20px;
+    }
+
+    .advence-text-4 {
+        font-size: 10px;
+        left: 20px;
+    }
+
+    .advence-text-5 {
+        font-size: 10px;
+        left: 20px;
+    }
+
+    .advence-text-6 {
+        font-size: 10px;
+        left: 20px;
+    }
+
+    .cost {
+        right: 20px;
+    }
+
+    .number {
+        font-size: 12px;
+    }
+
+    .mbit {
+        font-size: 11px;
+    }
+
+    .sait {
+        width: 270px;
+        height: 54px;
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 1162px){
+    .text-one {
+        font-size: 25px;
+    }
+
+    .text-two {
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width: 1118px){
+    .text-one {
+        font-size: 24px;
+    }
+
+    .text-two {
+        font-size: 24px;
+    }
+}
+
+@media all and (max-width: 1085px){
+    .text-one {
+        font-size: 21px;
+    }
+
+    .text-two {
+        font-size: 21px;
+    }
+}
+
+@media all and (max-width: 1035px){
+    .text-one {
+        font-size: 20px;
+    }
+
+    .text-two {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 894px){
+    .number_1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 17px;
+        color: #6EB1FF;
+        margin-right: 4px;
+    }
+    
+    .number_2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 17px;
+        color: #6EB1FF;
+        margin-right: 4px;
+    }
+    
+    .number_3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 17px;
+        color: #6EB1FF;
+        margin-right: 4px;
+    }
+    
+    .number_4 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 17px;
+        color: #6EB1FF;
+        margin-right: 4px;
+    }
+    
+    .number_5 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 17px;
+        color: #6EB1FF;
+        margin-right: 4px;
+    }
+    
+    .number_6 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 17px;
+        color: #6EB1FF;
+        margin-right: 4px;
+    }
+
+    .text-one {
+        font-size: 19px;
+    }
+
+    .text-two {
+        font-size: 19px;
+    }
+}
+
+
+.wrapper-2 {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/*   АДАПТИВ ПОД 768PX   */
+
+
+
+
+
+
+
+@media all and (max-width: 768px){
+    .wrapper {
+        display: none;
+    }
+
+    .wrapper-2 {
+        display: block;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    /*  Вид шапки */
+
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;        
+        margin-top: 5%;
+    }
+
+    .logotip {
+        display: flex;
+        width: 90%;
+    }
+
+    .info-money {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    /*  Вид блока денег*/
+
+    .div-money {
+        width: 140px;
+        height: 35px;
+        background: #6EB1FF;
+        box-shadow: 2.65807px 2.65807px 10.6323px rgba(0, 0, 0, 0.17);
+        border-radius: 22px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    #span-money-1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 15px;
+        color: #FFFFFF;
+        padding-right: 4px;
+    }
+
+    .img-money {
+        width: 12px;
+        height: 12px;
+    }
+
+    /*  Вид блока скорости*/
+
+    .div-speed {
+        width: 140px;
+        height: 35px;
+        background: #ffffff;
+        box-shadow: 2.65807px 2.65807px 10.6323px rgba(0, 0, 0, 0.17);
+        border-radius: 22px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #span-speed-1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        word-spacing: 20;
+        line-height: 15px;
+        color: #6EB1FF;
+        padding-right: 4px;
+    }
+
+    .span-speed {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 15px;
+        color: #6EB1FF;
+    }
+
+    /**/
+
+    .main {
+        display: block;
+    }
+
+    .main.active {
+        display: none;
+    }
+
+    .main-title {
+        margin-top: 5%;
+    }
+
+    .main-title-1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 28px;
+        color: #000000;
+    }
+
+    .main-title-2 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 28px;
+        color: #6EB1FF;
+    }
+
+    .title {
+        margin-top: 5%;
+    }
+
+    .span-title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 14px;
+        color: #000000;
+    }
+
+    /**/
+
+    .info {
+        position: relative;
+        background: #FFFFFF;
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.17);
+        border-radius: 33px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 35%;
+        padding-bottom: 35%;
+        margin-top: 4%;
+    }
+
+    .plus {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 70px;
+        height: 70px;
+        background: #FFFFFF;
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.17);
+        border-radius: 40px;
+        cursor: pointer;
+        outline: none;
+        font-size: 25px;
+        color: #6EB1FF;
+    }
+
+    /**/
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    #click-1 {
+        width: 100%;
+        height: 66px;
+        background: #6EB1FF;
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.17);
+        border-radius: 20px;
+        cursor: pointer;
+        outline: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 17px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+    }
+
+    #click-2 {
+        width: 100%;
+        height: 66px;
+        background: #6EB1FF;
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.17);
+        border-radius: 20px;
+        cursor: pointer;
+        outline: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 17px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .main-updating {
+        display: none;
+    }
+
+    .main-updating.active {
+        display: block;
+    }
+
+    .updating {
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 15%;
+        display: grid;
+        grid-template-columns: 1fr 0.3fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px 20px;
+    }
+
+    #button-updating {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        background: #FFFFFF;
+        box-shadow: 3.26437px 3.26437px 13.0575px rgba(0, 0, 0, 0.17);
+        border-radius: 26.931px;
+        cursor: pointer;
+        outline: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 11px;
+        color: #C2C2C2;
+    }
+
+    .advence-text-1 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .advence-text-2 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .advence-text-3 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .advence-text-4 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .advence-text-5 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .advence-text-6 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .btv-2 {
+        position: absolute;
+        right: 25px;
+    }
+
+    .minus {
+        width: 100%;
+        height: 62px;
+        background: #FFFFFF;
+        box-shadow: 3.96648px 3.96648px 15.8659px rgba(0, 0, 0, 0.17);
+        border-radius: 19.8324px;
+        cursor: pointer;
+        outline: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13.5719px;
+        line-height: 17px;
+        text-align: center;
+        color: #6EB1FF;
+        margin-top: 5%;
+    }
+
+    .click12 {
+        grid-area: unset
+    }
+    
+    .click13 {
+        grid-area: unset;
+    }
+    
+    .click14 {
+        grid-area: unset;
+    }
+    
+    .click15 {
+        grid-area: unset;
+    }
+    
+    .click16 {
+        grid-area: unset;
+    }
+    
+    .click17 {
+        grid-area: unset;
+    } 
+}
+
+
+
+
+
+
+
+/*   АДАПТИВ ПОД 480 PX   */
+
+
+
+
+
+
+
+@media all and (max-width: 480px){
+    .wrapper {
+        display: none;
+    }
+
+    .wrapper-2 {
+        display: block;
+        width: 85%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    /*  Вид шапки */
+
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;        
+        margin-top: 5%;
+    }
+
+    .logotip {
+        display: flex;
+    }
+
+    .info-money {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*  Вид блока денег*/
+
+    .div-money {
+        width: 120px;
+        height: 30px;
+        background: #6EB1FF;
+        box-shadow: 2.65807px 2.65807px 10.6323px rgba(0, 0, 0, 0.17);
+        border-radius: 22px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    #span-money-1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11.9613px;
+        line-height: 15px;
+        color: #FFFFFF;
+        padding-right: 4px;
+    }
+
+    .img-money {
+        width: 12px;
+        height: 12px;
+    }
+
+    /*  Вид блока скорости*/
+
+    .div-speed {
+        width: 120px;
+        height: 30px;
+        background: #ffffff;
+        box-shadow: 2.65807px 2.65807px 10.6323px rgba(0, 0, 0, 0.17);
+        border-radius: 22px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #span-speed-1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11.9613px;
+        word-spacing: 20;
+        line-height: 15px;
+        color: #6EB1FF;
+        padding-right: 4px;
+    }
+
+    .span-speed {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11.9613px;
+        line-height: 15px;
+        color: #6EB1FF;
+    }
+
+    /**/
+
+    .main {
+        display: block;
+    }
+
+    .main.active {
+        display: none;
+    }
+
+    .main-title {
+        margin-top: 5%;
+    }
+
+    .main-title-1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 23.0612px;
+        line-height: 28px;
+        color: #000000;
+    }
+
+    .main-title-2 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 23.0612px;
+        line-height: 28px;
+        color: #6EB1FF;
+    }
+
+    .title {
+        margin-top: 5%;
+    }
+
+    .span-title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        color: #000000;
+    }
+
+    /**/
+
+    .conclusion {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #FFFFFF;
+        box-shadow: 3.12664px 3.12664px 12.5066px rgba(0, 0, 0, 0.17);
+        border-radius: 25.7948px;
+        margin-top: 5%;
+        padding-top: 35%;
+        padding-bottom: 35%;
+    }
+
+    .plus {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 70px;
+        height: 70px;
+        background: #FFFFFF;
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.17);
+        border-radius: 40px;
+        cursor: pointer;
+        outline: none;
+        font-size: 25px;
+        color: #6EB1FF;
+    }
+
+    /**/
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    #click-1 {
+        width: 100%;
+        height: 66px;
+        background: #6EB1FF;
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.17);
+        border-radius: 20px;
+        cursor: pointer;
+        outline: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13.6866px;
+        line-height: 17px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+    }
+
+    #click-2 {
+        width: 100%;
+        height: 66px;
+        background: #6EB1FF;
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.17);
+        border-radius: 20px;
+        cursor: pointer;
+        outline: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13.6866px;
+        line-height: 17px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .main-updating {
+        display: none;
+    }
+
+    .main-updating.active {
+        display: block;
+    }
+
+    .updating {
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 15%;
+        display: grid;
+        grid-template-columns: 1fr 0.3fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px 20px;
+    }
+
+    #button-updating {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        background: #FFFFFF;
+        box-shadow: 3.26437px 3.26437px 13.0575px rgba(0, 0, 0, 0.17);
+        border-radius: 26.931px;
+        cursor: pointer;
+        outline: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 11px;
+        color: #C2C2C2;
+    }
+
+    .advence-text-1 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .advence-text-2 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .advence-text-3 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .advence-text-4 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .advence-text-5 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .advence-text-6 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .btv-2 {
+        position: absolute;
+        right: 25px;
+    }
+
+    .minus {
+        width: 100%;
+        height: 62px;
+        background: #FFFFFF;
+        box-shadow: 3.96648px 3.96648px 15.8659px rgba(0, 0, 0, 0.17);
+        border-radius: 19.8324px;
+        cursor: pointer;
+        outline: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13.5719px;
+        line-height: 17px;
+        text-align: center;
+        color: #6EB1FF;
+        margin-top: 5%;
+    }
+
+    .click12 {
+        grid-area: unset
+    }
+    
+    .click13 {
+        grid-area: unset;
+    }
+    
+    .click14 {
+        grid-area: unset;
+    }
+    
+    .click15 {
+        grid-area: unset;
+    }
+    
+    .click16 {
+        grid-area: unset;
+    }
+    
+    .click17 {
+        grid-area: unset;
+    } 
+}
+
+
+
+
+
+
+/*  АДАПТИВ ПОД 380PX   */
+
+
+
+
+
+
+
+@media all and (max-width: 380px) {
+    .img-logotip {
+        width: 80%;
+    }
+
+    .div-money {
+        width: 90px;
+        height: 25px;
+    }
+
+    .div-speed {
+        width: 90px;
+        height: 25px;
+    }
+
+    .main-title-1 {
+        font-size: 20px;
+    }
+
+    .main-title-2 {
+        font-size: 20px;
+    }
+
+    .span-title {
+        font-size: 13px;
+    }
+
+    .conclusion {
+        height: 100%;
+        padding-top: 35%;
+        padding-bottom: 35%;
+    }
+
+    .plus {
+        width: 45px;
+        height: 45px;
+    }
+    
+    #click-1 {
+        height: 55px;
+        font-size: 12px;
+    }
+
+    #click-2 {
+        height: 55px;
+        font-size: 12px;
+    }
+
+    .updating {
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 15%;
+        display: grid;
+        grid-template-columns: 1.4fr 0.1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px 20px;
+    }
+
+    .advence-text-1 {
+        position: absolute;
+        left: 15px;
+        font-size: 10px;
+    }
+
+    .advence-text-2 {
+        position: absolute;
+        left: 15px;
+        font-size: 10px;
+    }
+
+    .advence-text-3 {
+        position: absolute;
+        left: 15px;
+        font-size: 10px;
+    }
+
+    .advence-text-4 {
+        position: absolute;
+        left: 15px;
+        font-size: 10px;
+    }
+
+    .advence-text-5 {
+        position: absolute;
+        left: 15px;
+        font-size: 10px;
+    }
+
+    .advence-text-6 {
+        position: absolute;
+        left: 15px;
+        font-size: 10px;
+    }
+
+    .btv-2 {
+        position: absolute;
+        right: 20px;
+        font-size: 10px;
+    }
+
+    .mbit {
+        font-size: 10px;
+    }
+
+    #button-updating {
+        height: 45px;
+        font-size: 10px;
+    }
+
+    #minus {
+        height: 50px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+/*   АДАПТИВ ПОД 320PX   */
+
+
+
+
+
+
+
+@media all and (max-width: 320px) {
+    .img-logotip {
+        width: 70%;
+    }
+
+    .div-money {
+        width: 90px;
+        height: 25px;
+    }
+
+    .div-speed {
+        width: 90px;
+        height: 25px;
+    }
+
+    .main-title-1 {
+        font-size: 19px;
+    }
+
+    .span-title {
+        font-size: 12px;
+    }
+
+    .main-title-2 {
+        font-size: 19px;
+    }
+
+    .conclusion {
+        height: 100%;
+        padding-top: 35%;
+        padding-bottom: 35%;
+    }
+
+    .plus {
+        width: 45px;
+        height: 45px;
+    }
+    
+    #click-1 {
+        height: 50px;
+        font-size: 12px;
+    }
+
+    #click-2 {
+        height: 50px;
+        font-size: 12px;
+    }
+
+    .updating {
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 15%;
+        display: grid;
+        grid-template-columns: 1.4fr 0.1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px 20px;
+    }
+
+    .advence-text-1 {
+        position: absolute;
+        left: 15px;
+        font-size: 10px;
+    }
+
+    .advence-text-2 {
+        position: absolute;
+        left: 15px;
+        font-size: 10px;
+    }
+
+    .advence-text-3 {
+        position: absolute;
+        left: 15px;
+        font-size: 10px;
+    }
+
+    .advence-text-4 {
+        position: absolute;
+        left: 15px;
+        font-size: 10px;
+    }
+
+    .advence-text-5 {
+        position: absolute;
+        left: 15px;
+        font-size: 10px;
+    }
+
+    .advence-text-6 {
+        position: absolute;
+        left: 15px;
+        font-size: 10px;
+    }
+
+    .btv-2 {
+        position: absolute;
+        right: 20px;
+        font-size: 10px;
+    }
+
+    .mbit {
+        font-size: 10px;
+    }
+
+    #button-updating {
+        height: 40px;
+        font-size: 10px;
+    }
+
+    #minus {
+        height: 50px;
+        font-size: 12px;
+    }
+}
